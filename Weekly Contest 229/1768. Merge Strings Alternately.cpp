@@ -16,22 +16,11 @@ typedef vector<int> vi;
 
 string mergeAlternately(string word1, string word2) {
     
-    int i = word1.length();
-    int j = word2.length();
-    int n = i + j;
-    
-    int a = 0, b = 0;
+    int i = 0, j = 0;
     string result;
-    while(a < i || b < j){
-        
-        if (a < i){
-            result += word1[a];
-            a++;
-        }
-        if (b < j){
-            result += word2[b];
-            b++;
-        }
+    while(i < word1.length() || j < word2.length()){
+        if (i < word1.length()) result += word1[i++];
+        if (j < word2.length()) result += word2[j++];
     }
     return result;
 }
