@@ -21,8 +21,8 @@ int sum(int l, int r, int i, vector<int> &nums, vector<int> &muls){
     return max(a, b);
 }
 
-int maximumScore(vector<int>& nums, vector<int>& muls) {
-    return sum(0, nums.size()-1, 0, nums, muls);
+int maximumScore(vector<int>& nums, vector<int>& multipliers) {
+    return sum(0, nums.size()-1, 0, nums, multipliers);
 }
 
 int main(){
