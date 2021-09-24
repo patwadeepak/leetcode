@@ -14,25 +14,17 @@ using namespace std;
 typedef long long ll;
 typedef vector<int> vi;
 
-vector<int> minOperations(string boxes) {
-    int n = boxes.size();
-    vector<int> sum(n);
-    for(int i=0; i<n; i++){
-        for(int j=0; j<n; j++){
-            sum[i] += abs(i-j)*(boxes[j] - '0');
-        }
-    }
-    return sum;
+void solve(){
+    int n; cin >> n;
+    vector<int> a(n);
+    for(auto &x : a) cin >> x;
+    
 }
 
 int main(){
     FastIO
     int t; cin >> t;
     while(t--){
-        string boxes;
-        cin >> boxes;
-        auto result = minOperations(boxes);
-        for(auto &x : result) cout << x << " ";
-        cout << endl;
+        solve();
     }
 }
